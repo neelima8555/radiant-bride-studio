@@ -211,5 +211,4 @@
   background-image:
     radial-gradient(circle at 20% 30%, color-mix(in oklab, var(--blush) 30%, transparent) 0%, transparent 40%),
     radial-gradient(circle at 80% 70%, color-mix(in oklab, var(--champagne) 25%, transparent) 0%, transparent 40%);
-  }
 }
