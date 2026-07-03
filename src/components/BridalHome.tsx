@@ -255,7 +255,7 @@ export default function BridalHome() {
             </h2>
             <div className="gold-divider my-8 max-w-[100px]" />
             <p className="text-muted-foreground leading-relaxed">
-              For over a decade, Radiance Bridal Studio has been the trusted sanctuary where brides begin their forever. Every look is designed personally — starting with a private consultation, refined at your trial, and perfected on your wedding day.
+              For over a decade, Lekshana Makeovers has been the trusted sanctuary where brides begin their forever. Every look is designed personally — starting with a private consultation, refined at your trial, and perfected on your wedding day.
             </p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
@@ -445,8 +445,8 @@ export default function BridalHome() {
             </p>
             <div className="gold-divider my-8 max-w-[100px]" />
             <div className="space-y-3 text-sm text-primary-foreground/90">
-              <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-champagne" /> +91 98765 43210</div>
-              <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-champagne" /> hello@radiancebridal.com</div>
+              <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-champagne" /> +91 85550 10607</div>
+              <div className="flex items-center gap-3"><Mail className="h-4 w-4 text-champagne" /> hello@lekshanamakeovers.com</div>
               <div className="flex items-center gap-3"><MapPin className="h-4 w-4 text-champagne" /> The Radiance Studio, Bandra West, Mumbai</div>
             </div>
           </div>
@@ -493,9 +493,9 @@ export default function BridalHome() {
             <div className="gold-divider my-6 max-w-[100px]" />
             <div className="space-y-5 text-muted-foreground">
               <ContactRow icon={<MapPin />} title="Studio Address" text="12, Linking Road, Bandra West, Mumbai 400050" />
-              <ContactRow icon={<Phone />} title="Phone" text="+91 98765 43210" />
-              <ContactRow icon={<MessageCircle />} title="WhatsApp" text="+91 98765 43210" />
-              <ContactRow icon={<Mail />} title="Email" text="hello@radiancebridal.com" />
+              <ContactRow icon={<Phone />} title="Phone" text="+91 85550 10607" />
+              <ContactRow icon={<MessageCircle />} title="WhatsApp" text="+91 85550 10607" />
+              <ContactRow icon={<Mail />} title="Email" text="hello@lekshanamakeovers.com" />
             </div>
             <div className="mt-8 flex gap-3">
               <a href="#" aria-label="Instagram" className="h-11 w-11 grid place-items-center rounded-full border border-champagne text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
@@ -524,7 +524,7 @@ export default function BridalHome() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Flower2 className="h-5 w-5 text-champagne" strokeWidth={1.5} />
-              <div className="font-display text-xl">Radiance Bridal Studio</div>
+              <div className="font-display text-xl">Lekshana Makeovers</div>
             </div>
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
               Luxury bridal makeup, tailored to your love story.
@@ -549,8 +549,8 @@ export default function BridalHome() {
           <div>
             <div className="text-[11px] uppercase tracking-[0.3em] text-champagne mb-4">Contact</div>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>+91 98765 43210</li>
-              <li>hello@radiancebridal.com</li>
+              <li>+91 85550 10607</li>
+              <li>hello@lekshanamakeovers.com</li>
               <li>Bandra West, Mumbai</li>
             </ul>
             <div className="mt-4 flex gap-2">
@@ -560,13 +560,13 @@ export default function BridalHome() {
           </div>
         </div>
         <div className="mx-auto max-w-7xl px-5 md:px-8 mt-12 pt-6 border-t border-champagne/20 text-center text-xs text-primary-foreground/60">
-          © {new Date().getFullYear()} Radiance Bridal Studio. Crafted with love for every bride.
+          © {new Date().getFullYear()} Lekshana Makeovers. Crafted with love for every bride.
         </div>
       </footer>
 
       {/* WHATSAPP FLOAT */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/918555010607"
         target="_blank"
         rel="noreferrer"
         aria-label="WhatsApp"
