@@ -4,6 +4,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Great Vibes", cursive;
+}
+
 /*
  * Design system definition.
  *
@@ -59,29 +65,41 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-ivory: var(--ivory);
+  --color-blush: var(--blush);
+  --color-champagne: var(--champagne);
+  --color-nude: var(--nude);
+  --color-rose-deep: var(--rose-deep);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --radius: 0.5rem;
+  /* Luxury bridal palette */
+  --ivory: oklch(0.985 0.008 85);
+  --blush: oklch(0.9 0.04 20);
+  --champagne: oklch(0.82 0.08 80);
+  --nude: oklch(0.78 0.05 55);
+  --rose-deep: oklch(0.5 0.08 20);
+
+  --background: oklch(0.985 0.008 85);
+  --foreground: oklch(0.28 0.04 25);
+  --card: oklch(1 0.003 85);
+  --card-foreground: oklch(0.28 0.04 25);
+  --popover: oklch(1 0.003 85);
+  --popover-foreground: oklch(0.28 0.04 25);
+  --primary: oklch(0.5 0.08 20);
+  --primary-foreground: oklch(0.985 0.008 85);
+  --secondary: oklch(0.94 0.02 40);
+  --secondary-foreground: oklch(0.35 0.06 25);
+  --muted: oklch(0.95 0.015 60);
+  --muted-foreground: oklch(0.5 0.03 35);
+  --accent: oklch(0.82 0.08 80);
+  --accent-foreground: oklch(0.28 0.04 25);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.88 0.02 60);
+  --input: oklch(0.9 0.02 60);
+  --ring: oklch(0.82 0.08 80);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +158,58 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility font-script {
+  font-family: var(--font-script);
+}
+
+@utility glass-card {
+  background: color-mix(in oklab, white 55%, transparent);
+  backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid color-mix(in oklab, var(--champagne) 30%, transparent);
+  box-shadow: 0 20px 60px -30px color-mix(in oklab, var(--rose-deep) 25%, transparent);
+}
+
+@utility gold-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--champagne), transparent);
+}
+
+@utility text-gold {
+  background: linear-gradient(135deg, oklch(0.65 0.1 80), oklch(0.82 0.08 80), oklch(0.55 0.09 60));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(3deg); }
+}
+
+@utility animate-float {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@utility bg-floral {
+  background-image:
+    radial-gradient(circle at 20% 30%, color-mix(in oklab, var(--blush) 30%, transparent) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, color-mix(in oklab, var(--champagne) 25%, transparent) 0%, transparent 40%);
   }
 }
