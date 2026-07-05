@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: heroBride },
       { name: "twitter:image", content: heroBride },
     ],
-    links: [{ rel: "canonical", href: "https://radiant-bridal-canvas.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://lekshana-makeovers.lovable.app/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
           "@type": "BeautySalon",
           name: "Lekshana Makeovers",
           description: "Luxury bridal makeup studio specializing in HD, airbrush and traditional bridal makeup, hairstyling and saree draping.",
-          url: "https://radiant-bridal-canvas.lovable.app/",
+          url: "https://lekshana-makeovers.lovable.app/",
           telephone: "+918555010607",
           image: heroBride,
           areaServed: "India",
